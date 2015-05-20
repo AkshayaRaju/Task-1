@@ -1,0 +1,38 @@
+<html>
+<head>
+<script src="calculate.js">
+</script>
+<link rel="stylesheet" type="text/css" href="calculatorstyle.css">
+</head>
+<body><center>
+<font color="green" size="6"><b><u>CALCULATOR</u></b></font>
+</br></br></br>
+<table border="2" bordercolor="blue" cellspacing="10" id="calculator">
+<tr>
+<td><form name="f1">
+<input type="text" name="t1" id="txt1">
+</form></td></tr>
+<tr>
+<td><form name="f2">
+<input type="button" id="button" value=" 1 " onclick="document.f1.t1.value+='1'" >
+<input type="button"id="button" value=" 2 " onclick="document.f1.t1.value+='2'">
+<input type="button" id="button" value=" 3 " onclick="document.f1.t1.value+='3'">
+<input type="button" id="button" value=" + " onclick="calculate(1)"></br>
+<input type="button" id="button" value=" 4 " onclick="document.f1.t1.value+='4'">
+<input type="button" id="button" value=" 5 " onclick="document.f1.t1.value+='5'">
+<input type="button" id="button" value=" 6 " onclick="document.f1.t1.value+='6'">
+<input type="button" id="button" value=" - " onclick="calculate(2)"></br>
+<input type="button" id="button" value=" 7 " onclick="document.f1.t1.value+='7'">
+<input type="button" id="button" value=" 8 " onclick="document.f1.t1.value+='8'">
+<input type="button" id="button" value=" 9 " onclick="document.f1.t1.value+='9'">
+<input type="button" id="button" value=" * " onclick="calculate(3)"></br>
+<input type="button" id="button" value=" 0 " onclick="document.f1.t1.value+='0'">
+<input type="button" id="button" value=" / " onclick="calculate(4)">
+<input type="button" id="button" value=" = " onclick="calculate(value)">
+<input type="reset" id="button1" value= " clr " onclick="document.f1.t1.value='' ">
+</form></td>
+</tr>
+</table>
+</center>
+</body>
+</html>
